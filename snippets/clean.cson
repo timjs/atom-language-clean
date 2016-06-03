@@ -1,0 +1,23 @@
+'.source.clean':
+  code_inline:
+    prefix: 'ci'
+    body: '''
+      code inline {
+      \t$1
+      }
+    '''
+  definition_module:
+    prefix: 'def'
+    body: '''
+      definition module $1
+    '''
+  system_module:
+    prefix: 'sys'
+    body: '''
+      system module $1
+    '''
+  implementation_module:
+    prefix: 'imp'
+    body: '''
+      implementation module $1
+    '''

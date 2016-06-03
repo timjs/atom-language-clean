@@ -1,0 +1,7 @@
+'.source.clean':
+  'editor':
+    'commentStart': '// '
+    'increaseIndentPattern': '\\b(=|where\n|of)$'
+    'tabLength': 4
+    'softTabs': true
+    'preferredLineLength': 80
