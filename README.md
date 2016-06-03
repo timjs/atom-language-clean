@@ -1,3 +1,3 @@
 # language-clean package
 
-Clean language support in Atom.
+[Clean](http://wiki.clean.cs.ru.nl/Clean) language support in Atom.
