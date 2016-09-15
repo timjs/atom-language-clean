@@ -80,7 +80,7 @@ repository:
     match: '\\b(implementation|definition|system|module|from|import|qualified|as)\\b'
   keywordReserved:
     name: 'keyword.reserved.clean'
-    match: '\\b(special|code|inline|foreign|export|ccall|stdcall|generic|derive|infixl|infixr)\\b'
+    match: '\\b(special|code|inline|foreign|export|ccall|stdcall|generic|derive|infix(l|r)?|otherwise)\\b'
 
   literals:
     patterns: [
@@ -97,16 +97,16 @@ repository:
     match: '\'([^\'\\\\]|\\\\(x[0-9a-fA-F]+|\\d+|.))\''
   literalInt:
     name: 'constant.numeric.integer.decimal.clean'
-    match: '\\b[+-]?[0-9]+\\b'
+    match: '\\b[+~-]?[0-9]+\\b'
   literalOct:
     name: 'constant.numeric.integer.octal.clean'
-    match: '\\b0[0-7]+\\b'
+    match: '\\b[+~-]?0[0-7]+\\b'
   literalHex:
     name: 'constant.numeric.integer.hexadecimal.clean'
-    match: '\\b0x[0-9A-Fa-f]+\\b'
+    match: '\\b[+~-]?0x[0-9A-Fa-f]+\\b'
   literalReal:
     name: 'constant.numeric.float.clean'
-    match: '\\b[+-]?[0-9]+\\.[0-9]+([eE][+-]?[0-9]+)?\\b'
+    match: '\\b[+~-]?[0-9]+\\.[0-9]+(E[+-]?[0-9]+)?\\b'
   literalBool:
     name: 'constant.language.boolean.clean'
     match: '\\b(True|False)\\b'
