@@ -31,9 +31,22 @@ repository:
 
   comments:
     patterns: [
+      { include: '#commentDoc' }
       { include: '#commentBlock' }
-      # { include: '#commentDoc' }
       { include: '#commentLine' }
+    ]
+  commentDoc:
+    name: 'comment.block.documentation'
+    begin: '/\\*\\*'
+    end: '\\*/'
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.comment.documentation.begin.clean'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.comment.documentation.begin.clean'
+    patterns: [
+      { include: 'text.md' }
     ]
   commentBlock:
     name: 'comment.block.clean'
@@ -48,16 +61,6 @@ repository:
     patterns: [
       { include: '#comment' }
     ]
-  # commentDoc:
-    # name: 'comment.line.triple-slash.clean'
-    # begin: '/// '
-    # end: '$'
-    # beginCaptures:
-      # 0:
-        # name: 'punctuation.definition.comment.clean'
-    # patterns: [
-      # { include: 'text.md' }
-    # ]
   commentLine:
     name: 'comment.line.double-slash.clean'
     begin: '//'
