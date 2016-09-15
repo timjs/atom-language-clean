@@ -94,7 +94,7 @@ repository:
     ]
   literalChar:
     name: 'constant.character.clean'
-    match: '\'.\''
+    match: '\'([^\'\\\\]|\\\\(x[0-9a-fA-F]+|\\d+|.))\''
   literalInt:
     name: 'constant.numeric.integer.decimal.clean'
     match: '\\b[+-]?[0-9]+\\b'
