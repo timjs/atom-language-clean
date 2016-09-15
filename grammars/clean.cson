@@ -135,9 +135,6 @@ repository:
   operatorGeneral:
     name: 'keyword.operator.clean'
     match: '[-~@#$%^?!+*<>\/|&=:.]+'
-  operatorComposition:
-    name: 'keyword.operator.composition.clean'
-    match: '\\s+o\\s+'
 
   delimiters:
     name: 'punctuation.separator'
