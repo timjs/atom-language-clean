@@ -119,10 +119,10 @@ repository:
     end: '"'
     beginCaptures:
       0:
-        name: 'punctuation.definition.string.begin.swift'
+        name: 'punctuation.definition.string.begin.clean'
     endCaptures:
       0:
-        name: 'punctuation.definition.string.end.swift'
+        name: 'punctuation.definition.string.end.clean'
     patterns: [
       { include: '#escaped_character' }
     ]
