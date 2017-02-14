@@ -1,7 +1,7 @@
 '.source.clean':
   'editor':
     'commentStart': '// '
-    'increaseIndentPattern': '\\b(=|where\n|of)$'
+    'increaseIndentPattern': '\\b(=|where|of)$'
     'tabLength': 4
     'softTabs': true
     'preferredLineLength': 80
