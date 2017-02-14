@@ -4,7 +4,7 @@ fileTypes: [
   'icl'
   'dcl'
 ],
-firstLineMatch: '^(definition|implementation|system) module'
+firstLineMatch: '^((definition|implementation|system) )?module'
 
 patterns: [
   { include: '#marks' }
