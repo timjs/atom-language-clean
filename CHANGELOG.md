@@ -1,10 +1,14 @@
-## 0.3.0 - Initial Release
+## 0.4.0 - Add literate syntax highlighting
+
+- Add syntax highlighting for literate Clean
+
+## 0.3.0 - Extend highlighting
 
 - Add backslash to operator set
 - Add highlighting of main module header
 - Fix `increaseIndentPattern` after `where`
 
-## 0.2.0 - Initial Release
+## 0.2.0 - Extend highlighting
 
 - Add `otherwise` as keyword
 - Improve constant matching

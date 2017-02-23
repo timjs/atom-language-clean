@@ -1,0 +1,21 @@
+name: 'Literate Clean'
+scopeName: 'source.gfm.clean'
+fileTypes: [
+  'lcl'
+]
+firstLineMatch: '^[><] module'
+
+patterns: [
+  {
+    name: 'meta.embedded.clean'
+    begin: '^([><] )'
+    end: '$'
+    captures: {
+      1: { name: 'support.quote.gfm' }
+    }
+    patterns: [
+      { include: 'source.clean' }
+    ]
+  }
+  { include: 'source.gfm' }
+]
