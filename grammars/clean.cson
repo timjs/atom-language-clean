@@ -83,7 +83,7 @@ repository:
     match: '\\b(implementation|definition|system|module|from|import|qualified|as)\\b'
   keywordReserved:
     name: 'keyword.reserved.clean'
-    match: '\\b(special|code|inline|foreign|export|ccall|stdcall|generic|derive|infix(l|r)?|otherwise)\\b'
+    match: '\\b(special|code|inline|foreign|export|ccall|stdcall|generic|derive|infix(l|r)?|otherwise|dynamic)\\b'
 
   literals:
     patterns: [
