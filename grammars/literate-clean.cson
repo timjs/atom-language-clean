@@ -1,21 +1,20 @@
 name: 'Literate Clean'
-scopeName: 'source.gfm.clean'
+scopeName: 'text.restructuredtext.clean'
 fileTypes: [
   'lcl'
 ]
-firstLineMatch: '^[><] module'
 
 patterns: [
   {
     name: 'meta.embedded.clean'
-    begin: '^([><] )'
+    begin: '^(>>?)'
     end: '$'
     captures: {
-      1: { name: 'support.quote.gfm' }
+      1: name: 'punctuation.separator.literate.clean'
     }
     patterns: [
       { include: 'source.clean' }
     ]
   }
-  { include: 'source.gfm' }
+  { include: 'text.restructuredtext' }
 ]
