@@ -1,6 +1,6 @@
 {
   "name": "language-clean",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Clean language support in Atom",
   "license": "MIT",
   "repository": "https://github.com/timjs/atom-language-clean",
