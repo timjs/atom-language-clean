@@ -1,3 +1,8 @@
+## 0.5.0 - Switch to reStructuredText for literate Clean
+
+- Use `>  ` to indicate implementation and `>> ` for definitions instead of `<  `
+- Add `dynamic` to keywords
+
 ## 0.4.0 - Add literate syntax highlighting
 
 - Add syntax highlighting for literate Clean
